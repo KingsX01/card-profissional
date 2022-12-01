@@ -2,7 +2,8 @@ var selector = document.getElementById("selector")
 
 var img = document.getElementById("img")
 var pessoa = document.getElementById("pessoa")
-var profissao = document.getElementById("profissao")
+
+var trabalhador = document.getElementById("trabalhador")
 var bio = document.getElementById("bio")
 
 selector.addEventListener("change", (event) => {
@@ -15,8 +16,9 @@ selector.addEventListener("change", (event) => {
 
         img.setAttribute("src", data.foto)
         pessoa.innerText = data.nome
-        profissao.innerText = data.profissao
         bio.innerText = data.bio
+        trabalhador.innerText = data.profissao
+
     })
 
 })
